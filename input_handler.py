@@ -1,7 +1,7 @@
 """
 Handles following from pre-requisite.
 ●	Read inputs from a file located in a separate sub-folder.
-
+●	Write a main function on a different file that calls all functions
 """
 
 import json
@@ -18,8 +18,4 @@ class JsonHandler:
 
         return data
 
-if __name__=="__main__":
-    print("Welcome to input handler program")
-    json_handler_obj = JsonHandler("inputs/input1.json")
-    json_data = json_handler_obj.get_json_content()
-    print(json_data)
+
